@@ -1,10 +1,8 @@
-### Tool: Wireshark
-### Date: 22nd September 2026
-### What I Did:
-Captured live traffic on my laptop's Wi-Fi connection for a few minutes while browsing normally, then applied filters to examine the traffic in more detail.
-
 ### What I Found or Learned:
-Using the dns filter, I could see the domain lookups for the websites I had visited, confirming that my laptop resolves a site's name to an IP address before connecting to it. Using the http filter returned no results, which made sense once I looked into it, since almost all modern websites use HTTPS rather than plain HTTP, so that traffic is encrypted and does not appear under a plain http filter. Switching to the tls filter did show results, including Client Hello and Server Hello packets, which are part of the process a browser and server go through to agree on encryption before any actual data is exchanged.
+
+Using the dns filter, I could see the domain lookups for the websites I had visited, confirming that my laptop resolves a site's name to an IP address before connecting to it. Using the http filter returned no results, which made sense once I looked into it, since almost all modern websites use HTTPS rather than plain HTTP, so that traffic is encrypted and does not appear under a plain http filter. Switching to the tls filter did show results, including Client Hello and Server Hello packets, which are part of the process a browser and server go through to agree on encryption before any actual data is exchanged.  
+
 
 ### Notes for Later:
+
 Could expand this by comparing traffic from a site that still uses plain HTTP against a site using HTTPS, to see the difference more clearly. Also worth looking into what information is visible in a TLS handshake even though the content itself stays encrypted, such as the server name being connected to.
