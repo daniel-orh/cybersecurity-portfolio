@@ -1,6 +1,6 @@
 # Wireshark Session 2: CyberDefenders Web Investigation Lab
 
-**Tool:** Wireshark (plus CyberChef for decoding)
+**Tool:** Wireshark 
 
 **Date:** 29/09/2026
 
